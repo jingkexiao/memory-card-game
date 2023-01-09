@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<h1><button class="button" type="button" onClick="restart();">Restart</button></h1>
+<body>
+  <section class="memory-game">
+    
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Aurelia_labiata_-_Tiergarten_Sch%C3%B6nbrunn_2.jpg/1280px-Aurelia_labiata_-_Tiergarten_Sch%C3%B6nbrunn_2.jpg" alt="Aurelia" />
+      <img class="back-face" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SpongeBob_SquarePants_logo_by_Nickelodeon.svg/640px-SpongeBob_SquarePants_logo_by_Nickelodeon.svg.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Aurelia_labiata_-_Tiergarten_Sch%C3%B6nbrunn_2.jpg/1280px-Aurelia_labiata_-_Tiergarten_Sch%C3%B6nbrunn_2.jpg" alt="Aurelia" />
+      <img class="back-face" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SpongeBob_SquarePants_logo_by_Nickelodeon.svg/640px-SpongeBob_SquarePants_logo_by_Nickelodeon.svg.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="Spongebob">
+      <img class="front-face" src="https://upload.wikimedia.org/wikipedia/en/3/3b/SpongeBob_SquarePants_character.svg" alt="Spongebob" />
+      <img class="back-face" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SpongeBob_SquarePants_logo_by_Nickelodeon.svg/640px-SpongeBob_SquarePants_logo_by_Nickelodeon.svg.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="Spongebob">
+      <img class="front-face" src="https://upload.wikimedia.org/wikipedia/en/3/3b/SpongeBob_SquarePants_character.svg" alt="Spongebob" />
+      <img class="back-face" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SpongeBob_SquarePants_logo_by_Nickelodeon.svg/640px-SpongeBob_SquarePants_logo_by_Nickelodeon.svg.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="Patrick">
+      <img class="front-face" src="https://e7.pngegg.com/pngimages/693/910/png-clipart-patrick-the-starfish-illustration-patrick-star-spongebob-miscellaneous-fictional-character.png" alt="Patrick" />
+      <img class="back-face" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SpongeBob_SquarePants_logo_by_Nickelodeon.svg/640px-SpongeBob_SquarePants_logo_by_Nickelodeon.svg.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="Patrick">
+      <img class="front-face" src="https://e7.pngegg.com/pngimages/693/910/png-clipart-patrick-the-starfish-illustration-patrick-star-spongebob-miscellaneous-fictional-character.png" alt="Patrick" />
+      <img class="back-face" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SpongeBob_SquarePants_logo_by_Nickelodeon.svg/640px-SpongeBob_SquarePants_logo_by_Nickelodeon.svg.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="Plankton">
+      <img class="front-face" src="https://e7.pngegg.com/pngimages/288/608/png-clipart-spongebob-squarepants-plankton-spongebob-squarepants-creature-from-the-krusty-krab-spongebob-squarepants-featuring-nicktoons-globs-of-doom-plankton-and-karen-patrick-star-mr-krabs.png" alt="Plankton" />
+      <img class="back-face" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SpongeBob_SquarePants_logo_by_Nickelodeon.svg/640px-SpongeBob_SquarePants_logo_by_Nickelodeon.svg.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="Plankton">
+      <img class="front-face" src="https://e7.pngegg.com/pngimages/288/608/png-clipart-spongebob-squarepants-plankton-spongebob-squarepants-creature-from-the-krusty-krab-spongebob-squarepants-featuring-nicktoons-globs-of-doom-plankton-and-karen-patrick-star-mr-krabs.png" alt="Plankton" />
+      <img class="back-face" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SpongeBob_SquarePants_logo_by_Nickelodeon.svg/640px-SpongeBob_SquarePants_logo_by_Nickelodeon.svg.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="Mr.Krabs">
+      <img class="front-face" src="https://w7.pngwing.com/pngs/832/746/png-transparent-mr-krabs-plankton-and-karen-squidward-tentacles-patrick-star-steamed-crabs-food-fictional-character-pearl-krabs.png" alt="Mr.Krabs" />
+      <img class="back-face" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SpongeBob_SquarePants_logo_by_Nickelodeon.svg/640px-SpongeBob_SquarePants_logo_by_Nickelodeon.svg.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="Mr.Krabs">
+      <img class="front-face" src="https://w7.pngwing.com/pngs/832/746/png-transparent-mr-krabs-plankton-and-karen-squidward-tentacles-patrick-star-steamed-crabs-food-fictional-character-pearl-krabs.png" alt="Mr.Krabs" />
+      <img class="back-face" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SpongeBob_SquarePants_logo_by_Nickelodeon.svg/640px-SpongeBob_SquarePants_logo_by_Nickelodeon.svg.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="Squidward">
+      <img class="front-face" src="https://w7.pngwing.com/pngs/962/232/png-transparent-patrick-star-squidward-tentacles-mr-krabs-spongebob-squarepants-plankton-and-karen-moluscos.png" alt="Squidward" />
+      <img class="back-face" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SpongeBob_SquarePants_logo_by_Nickelodeon.svg/640px-SpongeBob_SquarePants_logo_by_Nickelodeon.svg.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card" data-framework="Squidward">
+      <img class="front-face" src="https://w7.pngwing.com/pngs/962/232/png-transparent-patrick-star-squidward-tentacles-mr-krabs-spongebob-squarepants-plankton-and-karen-moluscos.png" alt="Squidward" />
+      <img class="back-face" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/SpongeBob_SquarePants_logo_by_Nickelodeon.svg/640px-SpongeBob_SquarePants_logo_by_Nickelodeon.svg.png" alt="JS Badge" />
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
